@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==========SWIPER========= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- ==========FONT_AWESOME========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ==========PREOWN_PAGE========== -->
+    <div class="home">
+        <div class="container1">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imgs/imgLogo1.png" alt="" class="logo1" />
+                    <img src="imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Quem somos</a></li>
+                    <li><a href="trucks.html">Caminhões</a></li>
+                    <li><a href="preownpage.html">Seminovos</a></li>
+                    <li><a href="consórcio.html">Consórcio</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="accessories.html">Peças e Acessórios</a></li>
+                    <button class="show">
+                        <a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a>
+                      </button>
+                    <i class="fa-solid fa-xmark" id="cross"></i>
+                </ul>
+                <div class="right">
+                    <button><a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a></button>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="carousel heightone">
+        <div class="slide-container">
+            <div class="slide">
+                <div class="img">
+                    <img src="imgs/Banner_site3.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="imgs/Banner_site5.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="imgs/Banner_site9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="center">
+                <h2>
+                    VAMOS COMEÇAR A PROJETAR</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat dicta quae ratione ut a.</p>
+                <button>Assista mais</button>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!-- ==========BLOGS========== -->
+    <div class="blogs">
+        <div class="container">
+            <div class="heading">
+                <h1>Victoria Caminhoes</h1>
+                <span></span>
+            </div>
+            <div class="search_filter">
+                <div class="flex">
+                    <div class="left">
+                        <span>3 vehicle(s) in stock</span>
+                    </div>
+                    <div class="right">
+                        <select id="category">
+                            <option value="all">All</option>
+                            <option value="CF">CF</option>
+                            <option value="24">24</option>
+                            <option value="40">40</option>
+                            <!-- Add more categories as needed -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            
+            <div class="swiper mySwiper height">
+                <div id="productContainer">
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- --------FOOTER-Section--------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="all">
+                <div class="col_one">
+                    <div class="logo">
+                        <img src="imgs/imgLogo1.png" alt="not show!" />
+                    </div>
+                    <span>An explainer video of what Certificate <br> of Service does for your
+                        office and how <br> it works.</span>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Fique por dentro</h1>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Caminhões</a></li>
+                        <li><a href="#">Seminovos</a></li>
+                        <li><a href="#">Consórcio</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Peças e Acessórios</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Planejar eventos</h1>
+                    <ul>
+                        <li>CRONOGRAMA DE ENCERRAMENTO DE FERIADOS</li>
+                        <li>POLÍTICA DE COOKIES</li>
+                        <li>POLÍTICA DE PRIVACIDADE</li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Redes sociais</h1>
+                    <div class="links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="center_footer">
+                <p>(c) 2021. Victoria Caminhoes BK Advogada, LLC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                850: {
+                    slidesPerView: 3, spaceBetween: 20
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

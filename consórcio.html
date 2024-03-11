@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="/imgs/logo.gif.png" rel="icon">
+
+    <!-- ==========SWIPER========= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- ==========FONT_AWESOME========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vitória Caminhóes | Consórcio</title>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- ==========CONSORCIO_PAGE========== -->
+    <div class="home">
+        <div class="container1">
+            <nav id="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imgs/imgLogo1.png" alt="" class="logo1" />
+                        <img src="imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="trucks.html">Caminhões</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="accessories.html">Peças e Acessórios</a></li>
+                    <li><a href="consórcio.html">Consórcio</a></li>
+                    <li><a href="index.html">Quem somos</a></li>
+
+                    <!-- <li><a href="preownpage.html">Seminovos</a></li> -->
+
+                    <button class="show"><a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a></button>
+                    <i class="fa-solid fa-xmark" id="cross"></i>
+                </ul>
+                <div class="right">
+                    <button> <a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a> </button>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="consorico">
+        <div class="container">
+
+
+            <div class="left">
+                <h2>
+                    A ESCOLHA INTELIGENTE</h2>
+                <span></span>
+                <p> Veja porque é um excelente negócio: </p>
+                <ul class="consorico-lst">
+                    <li><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D9D9D9" />
+                        </svg>
+                        Facilita a compra dos caminhões DAF.</li>
+                    <li><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D9D9D9" />
+                        </svg>
+                        Possibilidade de antecipação da contemplação com lances.</li>
+                    <li><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D9D9D9" />
+                        </svg>
+                        Menor burocracia na liberação do crédito.</li>
+                    <li><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D9D9D9" />
+                        </svg>
+                        A compra pode ser parcelada sem juros.</li>
+                </ul>
+                <button>Assista mais</button>
+            </div>
+
+            <div class="bottom">
+                <div class="grid">
+                    <div class="col">
+                        <h4> Veja nossos créditos </h4>
+
+
+                        <form id="consorcioForm">
+
+                            <div class="All_btn">
+                                <p id="menorBtn" class="consorico-menor-btn">Menor</p>
+                                <p id="maiorBtn" class="consorico-maior-btn">Maior</p>
+                            </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="tab active">
+                            <h4>Crédito Pretendido:</h4>
+
+                            <div class="flex">
+                                <span>R$<span class="value"> 300.000,00 </span></span>
+                                <span>R$ 1.200.000,00</span>
+                            </div>
+                            <!-- Hidden input field to store the selected range value -->
+                            <input type="hidden" id="selectedRange" name="selectedRange">
+                            <input type="range" max="100" min="0" class="range" oninput="sliderChange(this.value)">
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <a class="consorico-custom-btn" href="contact.html" >Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========ABOUT========== -->
+
+    <section class="consorico-section">
+
+        <div class="consortium-row">
+
+            <div class="consortium-row-part1">
+                <img src="./imgs/consorcio-img-2.png" alt="">
+            </div>
+
+            <div class="consortium-row-part2">
+                <h2>Consórcio Nacional DAF é Credibilidade em Dobro:</h2>
+                <p>
+                    A DAF Caminhões e a Randon Consórcios se uniram para criar o Consórcio Nacional DAF. Uma parceria de
+                    peso
+                    que possibilita você aumentar osseus resultados e transformar o seu futuro. Você conta com a
+                    experiência,tradição e credibilidade de uma Administradora de Consórcios com mais de 30anos de
+                    mercado,
+                    mais de 225 mil cotas comercializadas e mais de R$ 18 bilhões em créditos disponibilizados.
+                    Além da experiência, a ética, transparência e tecnologiaforam fatores determinantes na escolha da
+                    DAF
+                    Caminhões pela Randon, comogestora do seu consórcio. E assim, você tem duas marcas de credibilidade
+                    paragarantir o sucesso do seu negócio: a aquisição dos caminhões DAF com a economiae o planejamento
+                    oferecidos pelo consórcio.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="about consortium">
+            <div class="container">
+                <div class="heading">
+                    <h1>DAF CONSÓRCIO</h1>
+                    <span></span>
+                    <p>Planejar é o caminho para alcançar. Simples e econômico, conheça os benefícios e forme um
+                        consórcio.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="consortium-column">
+                        <img src="imgs/xf.jpg.png" alt="">
+                        
+                        <h2>DAF XF</h2>
+                        <div class="consortium-column-btn">
+                            <p id="truckVersionBtn1" class="truck-version-1">Eu quero essa versão </p>
+                        </div>
+                    </div>
+                    <div class="consortium-column">
+                        <img src="imgs/cf-rigido-1.jpg.png" alt="">
+                       
+                        <h2>DAF CF</h2>
+                        <div class="consortium-column-btn">
+                            <p id="truckVersionBtn2" class="truck-version-2">Eu quero essa versão </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ==========MAP========== -->
+        <div class="map">
+            <div class="container">
+                <div class="all">
+                    <h1>ONDE ESTAMOS</h1>
+                    <span>Faça-nos uma visita!</span>
+                    <a href="#" class="consorico-custom-btn"><i class="fa-solid fa-truck-fast"></i> Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+        <!-- ==========CONTACT========== -->
+        <div class="contact">
+            <div class="container">
+                <div class="all">
+                    <h1>QUERO RECEBER <br />
+                        OPORTUNIDADES DE CONSÓRCIOS </h1>
+                    <!-- <form action=""> -->
+                    <input type="text" name="name" placeholder="Digite o seu nome">
+                    <input type="email" name="email" placeholder="Digite o seu email">
+
+                    <select name="selectModel" id="">
+                        <option value="Modelo">Modelo</option>
+                        <option value="2022">CF</option>
+                        <option value="2022">XF</option>
+                        <option value="2022">OFF-Road</option>
+                    </select>
+
+                    <div class="consorico-form-row">
+                        <select name="selectState" id="" class="consorico-form-row-select1">
+                            <option value="Estad">Estado</option>
+                            <option value="2022">Es</option>
+                            <option value="2022">Ba</option>
+                            <option value="2022"...</option>
+                        </select>
+
+                        <select name="selectCity" id="" class="consorico-form-row-select2">
+                            <option value="Cidade">Cidade</option>
+                            <option value="2022">Viana</option>
+                            <option value="2022">Vitória da Conquista </option>
+                            <option value="2022">...</option>
+                        </select>
+
+                    </div>
+
+                    <textarea name="message" placeholder="Deixe-nos uma mensagem"></textarea>
+                    <div class="check">
+                        <input type="checkbox" name="" id="">
+                        <span> Li e concordo com a Política de Privacidade concedendo o uso dos meus dados.</span>
+                    </div>
+                    <button style="width: 100%;" type="submit"><i class="fa-solid fa-paper-plane"></i>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <div class="container">
+        <div class="all">
+            <div class="col_one">
+            <div class="logo">
+                <img src="imgs/imgLogo1.png" alt="not show!" />
+            </div>
+            <span>Faz parte do nosso DNA,<br>
+                oferecer os melhores produtos afim de que cada cliente tenha um ótimo pós venda.</span>
+            </div>
+            <div class="col_one">
+            <h1>
+                Fique por dentro</h1>
+            <ul>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="trucks.html">Caminhões</a></li>
+                <li><a href="consórcio.html">Consórcio</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="accessories.html">Peças e Acessórios</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            </div>
+            <div class="col_one">
+            <h1>
+                Outros Sites da DAF</h1>
+            <ul>
+                <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop " target="_blank">DAF Webshop</a></li>
+                <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf" target="_blank">Peças Genuinas</a></li>
+                <li><a href="https://www.paccarfinancial.com.br/pt-br" target="_blank">PACCAR Financial</a></li>
+            </ul>
+            </div>
+            <div class="col_one">
+            <h1>
+                Redes sociais</h1>
+            <div class="links">
+                <a href="https://www.facebook.com/dafvitoria/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="center_footer">
+            <p>Direitos Reservados © 2024 Vitória Caminhões – OrionAppSolutions</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+
+
+    <script>
+
+        const menorBtn = document.querySelector(".consorico-menor-btn");
+        const maiorBtn = document.querySelector(".consorico-maior-btn");
+
+        const truckVersion1 = document.querySelector(".truck-version-1");
+        const truckVersion2 = document.querySelector(".truck-version-2");
+
+        menorBtn.addEventListener("click", function () {
+            if (menorBtn.classList.contains("consorico-menor-btn-selected")) {
+                menorBtn.classList.remove("consorico-menor-btn-selected");
+                // If unclicked, you can remove the value here or perform any other action
+                console.log("Button unclicked: ", menorBtn.textContent);
+            } else {
+                menorBtn.classList.add("consorico-menor-btn-selected");
+                // If clicked, you can get the value here or perform any other action
+                console.log("Button clicked: ", menorBtn.textContent);
+            }
+        });
+
+
+        maiorBtn.addEventListener("click", function () {
+            if (maiorBtn.classList.contains("consorico-maior-btn-selected")) {
+                maiorBtn.classList.remove("consorico-maior-btn-selected");
+                // If unclicked, you can remove the value here or perform any other action
+                console.log("Button unclicked: ", maiorBtn.textContent);
+            } else {
+                maiorBtn.classList.add("consorico-maior-btn-selected");
+                // If clicked, you can get the value here or perform any other action
+                console.log("Button clicked: ", maiorBtn.textContent);
+            }
+        });
+
+
+        truckVersion1.addEventListener("click", function () {
+            if (truckVersion1.classList.contains("truck-version-selected")) {
+                truckVersion1.classList.remove("truck-version-selected");
+                // If unclicked, you can remove the value here or perform any other action
+                console.log("Button unclicked: ", truckVersion1.textContent);
+            } else {
+                truckVersion1.classList.add("truck-version-selected");
+                // If clicked, you can get the value here or perform any other action
+                console.log("Button clicked: ", truckVersion1.textContent);
+            }
+        });
+
+
+        truckVersion2.addEventListener("click", function () {
+            if (truckVersion2.classList.contains("truck-version-selected")) {
+                truckVersion2.classList.remove("truck-version-selected");
+                // If unclicked, you can remove the value here or perform any other action
+                console.log("Button unclicked: ", truckVersion2.textContent);
+            } else {
+                truckVersion2.classList.add("truck-version-selected");
+                // If clicked, you can get the value here or perform any other action
+                console.log("Button clicked: ", truckVersion2.textContent);
+            }
+        });
+
+
+
+
+
+        // Range functionality
+        const value = document.querySelector(".value");
+
+        function parseBrazilianReal(value) {
+            return parseFloat(value.replace(/\./g, "").replace(",", "."));
+        }
+
+        function formatBrazilianReal(value) {
+            return value.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }).replace('R$', '').trim(); // Remove the currency symbol
+        }
+
+
+        function sliderChange(val) {
+            // Parse the min and max values
+            const minValue = parseBrazilianReal("300.000,00");
+            const maxValue = parseBrazilianReal("1.200.000,00");
+
+            // Parse the current slider value
+            const currentValue = parseBrazilianReal(val);
+
+            // Calculate the range
+            let range = minValue + ((currentValue / 100) * (maxValue - minValue));
+
+            // console.log("Range:", range);
+
+            // Update the hidden input field value
+            document.getElementById('selectedRange').value = range;
+
+            // Update the displayed range value
+            value.innerHTML = ' ' + formatBrazilianReal(range);
+        }
+
+
+
+
+    </script>
+
+
+
+    <script>
+        $(function () {
+
+            $('#menorBtn').click(function () {
+                // Add a hidden input field to the form with the value of the button
+                $('#consórcioForm').append('<input type="hidden" name="selectedButton" value="Menor">');
+            });
+
+            $('#maiorBtn').click(function () {
+                $('#consórcioForm').append('<input type="hidden" name="selectedButton" value="Maior">');
+            });
+
+
+            $('#truckVersionBtn1').click(function () {
+                $('#consórcioForm').append('<input type="hidden" name="truckVersionButton" value="Daf XF">');
+            });
+
+
+            $('#truckVersionBtn2').click(function () {
+                $('#consórcioForm').append('<input type="hidden" name="truckVersionButton" value="Daf CF">');
+            });
+
+
+            // Form submission
+            $('#consorcioForm').submit(function (event) {
+                event.preventDefault();
+
+                var formData = $(this).serialize(); // Serialize form data
+
+                $.ajax({
+                    url: 'consorcio.php', // PHP file to send form data
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        Swal.fire({
+                            icon: 'success',
+                            html:
+                                '<p>Vitória Caminhóes recebeu sua mensagem</p>' +
+                                '<p>Entraremos em contato em breve</p>' +
+                                '<p>Obrigado!</p>',
+                            showCloseButton: true,
+                            focusConfirm: false,
+
+                        });
+                    },
+                    error: function () {
+                        Swal.fire('Erro', 'Falha ao enviar o e-mail.', 'error');
+
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            autoplay: true,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                850: {
+                    slidesPerView: 3, spaceBetween: 20
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
