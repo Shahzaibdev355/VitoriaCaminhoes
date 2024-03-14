@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
             img:"./imgs/daf-PAC_PX7.png",
         },
         {
-            name:"XF 105 FTS 460 6x2 (diesel)(E",
+            name:"",
             category:"24",
             img:"./imgs/DAF Viana - 24.jpg",
             price:"R$ 20,00"
         },
         {
-            name:"XF 105 FTS 460 6x2 (diesel)(E",
+            name:"",
             category:"40",
             img:"./imgs/62753429088c4989621939.jpg",
             price:"R$ 40,00"

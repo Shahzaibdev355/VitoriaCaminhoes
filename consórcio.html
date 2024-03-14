@@ -44,7 +44,7 @@
                     <li><a href="services.html">Serviços</a></li>
                     <li><a href="accessories.html">Peças e Acessórios</a></li>
                     <li><a href="consórcio.html">Consórcio</a></li>
-                    <li><a href="index.html">Quem somos</a></li>
+                    <!--<li><a href="index.html">Quem somos</a></li>-->
 
                     <!-- <li><a href="preownpage.html">Seminovos</a></li> -->
 
@@ -87,20 +87,20 @@
                         </svg>
                         A compra pode ser parcelada sem juros.</li>
                 </ul>
-                <button>Assista mais</button>
+                <!--<button>Assista mais</button>-->
             </div>
 
             <div class="bottom">
                 <div class="grid">
                     <div class="col">
-                        <h4> Veja nossos créditos </h4>
+                        <h4> Veja as nossas opções </h4>
 
 
                         <form id="consorcioForm">
 
                             <div class="All_btn">
-                                <p id="menorBtn" class="consorico-menor-btn">Menor</p>
-                                <p id="maiorBtn" class="consorico-maior-btn">Maior</p>
+                                <p id="menorBtn" class="consorico-menor-btn">Parcela</p>
+                                <p id="maiorBtn" class="consorico-maior-btn">Crédito</p>
                             </div>
 
 
@@ -120,7 +120,7 @@
 
                     </div>
                     <div class="col">
-                        <a class="consorico-custom-btn" href="contact.html" >Contato</a>
+                        <a class="consorico-custom-btn" href="#" >Enviar</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
 
         <div class="consortium-row">
 
-            <div class="consortium-row-part1">
+            <!--<div class="consortium-row-part1">
                 <img src="./imgs/consorcio-img-2.png" alt="">
             </div>
 
@@ -155,11 +155,11 @@
                 </p>
             </div>
 
-        </div>
+        </div>-->
 
 
 
-        <div class="about consortium">
+        <!--<div class="about consortium">
             <div class="container">
                 <div class="heading">
                     <h1>DAF CONSÓRCIO</h1>
@@ -186,12 +186,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
 
 
         <!-- ==========MAP========== -->
-        <div class="map">
+        <!--<div class="map">
             <div class="container">
                 <div class="all">
                     <h1>ONDE ESTAMOS</h1>
@@ -199,7 +199,7 @@
                     <a href="#" class="consorico-custom-btn"><i class="fa-solid fa-truck-fast"></i> Entre em Contato</a>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- ==========CONTACT========== -->
         <div class="contact">
             <div class="container">
@@ -217,20 +217,44 @@
                         <option value="2022">OFF-Road</option>
                     </select>
 
-                    <div class="consorico-form-row">
+                   <div class="consorico-form-row">
                         <select name="selectState" id="" class="consorico-form-row-select1">
-                            <option value="Estad">Estado</option>
+                            <option value="Estad">Cidade</option>
                             <option value="2022">Es</option>
                             <option value="2022">Ba</option>
                             <option value="2022"...</option>
+                                
                         </select>
 
-                        <select name="selectCity" id="" class="consorico-form-row-select2">
-                            <option value="Cidade">Cidade</option>
-                            <option value="2022">Viana</option>
-                            <option value="2022">Vitória da Conquista </option>
-                            <option value="2022">...</option>
-                        </select>
+                            <select required="" id="estado" name="estado" onchange="AtualizaCidade(this, 'cidade', 7682);">
+                                <option value="">Estado</option>
+                                    <option value="1">AC</option>
+                                    <option value="2">AL</option>
+                                    <option value="3">AP</option>
+                                    <option value="4">AM</option>
+                                    <option value="5">BA</option>
+                                    <option value="6">CE</option>
+                                    <option value="7">DF</option>
+                                    <option value="9">GO</option>
+                                    <option value="10">MA</option>
+                                    <option value="11">MT</option>
+                                    <option value="12">MS</option>
+                                    <option value="13">MG</option>
+                                    <option value="14">PA</option>
+                                    <option value="15">PB</option>
+                                    <option value="16">PR</option>
+                                    <option value="17">PE</option>
+                                    <option value="18">PI</option>
+                                    <option value="19">RJ</option>
+                                    <option value="20">RN</option>
+                                    <option value="21">RS</option>
+                                    <option value="22">RO</option>
+                                    <option value="23">RR</option>
+                                    <option value="24">SC</option>
+                                    <option value="25">SP</option>
+                                    <option value="26">SE</option>
+                                    <option value="27">TO</option>
+                            </select>
 
                     </div>
 
