@@ -710,11 +710,11 @@ html {
 
 /* ===========CONSORICO============ */
 .consorico {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../imgs/Banner_site5.jpg");
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../imgs/Banner_site5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 0;
+    padding: 20px 0; */
 }
 
 .consorico .bottom {
@@ -830,7 +830,7 @@ input[type=range] {
 .background_img {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../imgs/bg-acessorios.jpeg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../imgs/Banner_Pecas.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1191,9 +1191,10 @@ input[type=range] {
 
 /* =========MAP========= */
 .map {
+    margin-top: 10px;
     padding: 150px 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../imgs/DAF\ Viana\ -\ 25.jpg");
+    background:  url("../imgs/Banner_Consorcio.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1201,8 +1202,9 @@ input[type=range] {
 
 .map .all h1 {
     font-size: 50px;
-    color: #FFF;
-    margin-bottom: 20px;
+    color: #fafffe;
+    margin-bottom: 10px;
+    margin-top: ;
 }
 
 .map .all span {
@@ -1649,6 +1651,48 @@ input[type=range] {
         margin-left: 12vw;
     }
 }
+
+
+
+/* Daf politica  css */
+.daf_politica_img {
+    width: 100%;
+    height: 55vh;
+    background: url("../imgs/daf-politica.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.daf-politica-col1 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2471,6 +2515,11 @@ input[type=range] {
         background-position: center;
     }
 
+    .daf_politica_img {
+        height: fit-content;
+        background-position: center;
+    }
+
     .daf_multisuporte_img {
         height: fit-content;
         background-position: initial;
@@ -2509,12 +2558,23 @@ input[type=range] {
         background-position: center;
     }
 
+    .heightone .slide .img .consorcio-img {
+        height: inherit;
+        width: max-content;
+        background-size: cover;
+        background-position: center;
+    }
+
     .services .container .row {
         grid-gap: 40px;
     }
 
     .heightone {
         height: 45vh;
+    }
+
+    .consorcio-heightone {
+        height: 95vh!important;
     }
 
     .services .container .row .col,

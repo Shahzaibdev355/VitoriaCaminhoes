@@ -4,8 +4,8 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Extract form data
     $selectedRange = $_POST['selectedRange'];
-    $selectedButton = $_POST['selectedButton'];
-    $truckVersionButton = $_POST['truckVersionButton'];
+    // $selectedButton = $_POST['selectedButton'];
+    // $truckVersionButton = $_POST['truckVersionButton'];
     $name = $_POST['name'];
     $email = $_POST['email'];
     $selectModel = $_POST['selectModel'];
@@ -32,13 +32,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $subject = 'Mail From Vitória Caminhóes Consórcio Form: ';
     $body = "Name: $name\n";
     $body .= "Email: $email\n";
-    $body .= "Créditos: $selectedButton\n";
     $body .= "Crédito Pretendido R$: $selectedRange\n";
-    $body .= "Truck Version: $truckVersionButton\n";
     $body .= "Model: $selectModel\n";
     $body .= "State: $selectState\n";
     $body .= "City: $selectCity\n";
     $body .= "Message:\n$message\n";
+    
+    // $body .= "Créditos: $selectedButton\n";
+    // $body .= "Truck Version: $truckVersionButton\n";
 
     // Send email
     if (mail($to, $subject, $body)) {

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Favicon -->
-  <link href="/imgs/logo.gif.png" rel="icon">
+    <!-- Favicon -->
+    <link href="/imgs/logo.gif.png" rel="icon">
 
     <!-- ==========SWIPER========= -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -28,17 +28,16 @@
                 <div class="logo">
                     <a href="index.html">
                         <img src="imgs/imgLogo1.png" alt="" class="logo1" />
-                    <img src="imgs/logo.png" alt="" />
+                        <img src="imgs/logo.png" alt="" />
                     </a>
                 </div>
                 <ul>
-
+        
                     <li><a href="trucks.html">Caminhões</a></li>
                     <li><a href="services.html">Serviços</a></li>
                     <li><a href="accessories.html">Peças e Acessórios</a></li>
                     <li><a href="consórcio.html">Consórcio</a></li>
-                    <!--<li><a href="index.html">Quem somos</a></li>-->
-
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
 
                     <button class="show"><a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a></button>
                     <i class="fa-solid fa-xmark" id="cross"></i>
@@ -74,7 +73,8 @@
             <div class="center">
                 <h2>
                     VAMOS COMEÇAR A VIAJAR </h2>
-                <p>A Vitória Caminhões é uma concessionária DAF consolidada no mercado, pois traz a bagagem de seus sócios há mais de 30 anos no mercado de transporte.</p>
+                <p>A Vitória Caminhões é uma concessionária DAF consolidada no mercado, pois traz a bagagem de seus
+                    sócios há mais de 30 anos no mercado de transporte.</p>
                 <a href="contact.html"><button>Saiba Mais</button></a>
             </div>
         </div>
@@ -92,6 +92,7 @@
                 <span></span>
             </div>
 
+        
             <div class="search_filter">
                 <div class="flex">
                     <div class="left">
@@ -99,19 +100,22 @@
                     </div>
                     <div class="right">
                         <select id="category">
+                            <option value="all">Categoria</option>
                             <option value="CF">CF</option>
                             <option value="XF">XF</option>
-                            <option value="OFf-Road">Off-Road</option>
+                            <option value="Off-Road">Off-Road</option>
                             <option value="Serie">Série Especial</option>
                             <!-- Add more categories as needed -->
                         </select>
                     </div>
                 </div>
             </div>
+
+
             <!-- Swiper -->
             <div class="swiper mySwiper height">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-category="CF">
                         <div class="col" value="all">
                             <img src="imgs/daf-cf-FTS_MX11.png" alt="">
                             <h2 class="black">DAF CF (TRATOR)</h2>
@@ -121,10 +125,10 @@
                             </div>
                             <h3></h3>
                             <button onclick="abrirPDFMX11()">Mais Detalhes</button></a>
-                            <a href="contact.html"><button>Quero o Meu</button></a>                               
+                            <a href="contact.html"><button>Quero o Meu</button></a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-category="CF">
                         <div class="col">
                             <img src="imgs/daf-PAC_PX7.png" alt="">
                             <h2 class="black">DAF CF (RIGIDO)</h2>
@@ -133,10 +137,10 @@
                                 <div class="item"><i class="fa-solid fa-circle-info"></i><span>CF</span></div>
                             </div>
                             <button onclick="abrirPDFPX7()">Mais Detalhes</button>
-                            <a href="contact.html"><button>Quero o Meu</button></a>   
+                            <a href="contact.html"><button>Quero o Meu</button></a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-category="CF">
                         <div class="col">
                             <img src="imgs/daf-cf-offroad.png" alt="">
                             <h2 class="black">DAF CF (Off-Road)</h2>
@@ -145,11 +149,11 @@
                                 <div class="item"><i class="fa-solid fa-circle-info"></i><span>CF</span></div>
                             </div>
                             <button onclick="abrirPDFMX13()">Mais Detalhes</button>
-                            <a href="contact.html"><button>Quero o Meu</button></a>   
+                            <a href="contact.html"><button>Quero o Meu</button></a>
                         </div>
                     </div>
-                    <!--<div class="swiper-slide">
-                        <div class="col">
+                    <div class="swiper-slide" data-category="XF">
+                        <!--<div class="col">
                             <img src="imgs/daf-xf-10anos-removebg-preview-hd-removebg-preview.png" alt="">
                             <h2 class="black">DAF XF (10 ANOS)</h2>
                             <div class="flex">
@@ -158,9 +162,9 @@
                             </div>
                             <button onclick="abrirPDF()">Mais Detalhes</button>
                             <a href="contact.html"><button>Quero o Meu</button></a>   
-                        </div>
-                    </div>-->
-                    <div class="swiper-slide">
+                        </div>-->
+                    </div>
+                    <div class="swiper-slide" data-category="XF">
                         <div class="col">
                             <img src="imgs/daf-xf-mx13.png" alt="">
                             <h2 class="black">DAF XF (Off Road)</h2>
@@ -169,10 +173,10 @@
                                 <div class="item"><i class="fa-solid fa-circle-info"></i><span>XF</span></div>
                             </div>
                             <button onclick="abrirPDF_OffRoad_MX13()">Mais Detalhes</button>
-                            <a href="contact.html"><button>Quero o Meu</button></a>   
+                            <a href="contact.html"><button>Quero o Meu</button></a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-category="XF">
                         <div class="col">
                             <img src="imgs/daf-XF_mtt_mx13.png" alt="">
                             <h2 class="black">DAF XF (TRATOR)</h2>
@@ -181,61 +185,78 @@
                                 <div class="item"><i class="fa-solid fa-circle-info"></i><span>XF</span></div>
                             </div>
                             <button onclick="abrirPDF_XFMX13()">Mais Detalhes</button>
-                            <a href="contact.html"><button>Quero o Meu</button></a> 
+                            <a href="contact.html"><button>Quero o Meu</button></a>
                         </div>
                     </div>
+
+                    <div class="swiper-slide" data-category="Off-Road">
+                        <div class="col">
+                            <h2>Em breve/h2>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" data-category="Serie">
+                        <div class="col">
+                            <h2>Em breve</h2>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
-   <!-- --------FOOTER-Section--------- -->
-  <div class="footer">
-    <div class="container">
-      <div class="all">
-        <div class="col_one">
-          <div class="logo">
-            <img src="imgs/imgLogo1.png" alt="not show!" />
-          </div>
-          <span>Faz parte do nosso DNA,<br>
-            oferecer os melhores produtos afim de que cada cliente tenha um ótimo pós venda.</span>
+    <!-- --------FOOTER-Section--------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="all">
+                <div class="col_one">
+                    <div class="logo">
+                        <img src="imgs/imgLogo1.png" alt="not show!" />
+                    </div>
+                    <span>Faz parte do nosso DNA,<br>
+                        oferecer os melhores produtos afim de que cada cliente tenha um ótimo pós venda.</span>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Fique por dentro</h1>
+                    <ul>
+                        <li><a href="quemSomos.html">Quem somos</a></li>
+                        <li><a href="trucks.html">Caminhões</a></li>
+                        <li><a href="consórcio.html">Consórcio</a></li>
+                        <li><a href="services.html">Serviços</a></li>
+                        <li><a href="accessories.html">Peças e Acessórios</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Outros Sites da DAF</h1>
+                    <ul>
+                        <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop "
+                                target="_blank">DAF Webshop</a></li>
+                        <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf"
+                                target="_blank">Peças Genuinas</a></li>
+                        <li><a href="https://www.paccarfinancial.com.br/pt-br" target="_blank">PACCAR Financial</a></li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Redes sociais</h1>
+                    <div class="links">
+                        <a href="https://www.facebook.com/dafvitoria/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center_footer">
+                <p>Direitos Reservados © 2024 Vitória Caminhões – OrionAppSolutions</p>
+            </div>
         </div>
-        <div class="col_one">
-          <h1>
-            Fique por dentro</h1>
-          <ul>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="trucks.html">Caminhões</a></li>
-            <li><a href="consórcio.html">Consórcio</a></li>
-            <li><a href="services.html">Serviços</a></li>
-            <li><a href="accessories.html">Peças e Acessórios</a></li>
-            <li><a href="contact.html">Contato</a></li>
-          </ul>
-        </div>
-        <div class="col_one">
-          <h1>
-            Outros Sites da DAF</h1>
-          <ul>
-            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop " target="_blank">DAF Webshop</a></li>
-            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf" target="_blank">Peças Genuinas</a></li>
-            <li><a href="https://www.paccarfinancial.com.br/pt-br" target="_blank">PACCAR Financial</a></li>
-          </ul>
-        </div>
-        <div class="col_one">
-          <h1>
-            Redes sociais</h1>
-          <div class="links">
-            <a href="https://www.facebook.com/dafvitoria/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="center_footer">
-        <p>Direitos Reservados © 2024 Vitória Caminhões – OrionAppSolutions</p>
-      </div>
     </div>
-  </div>
 
     <script src="./js/navbar.js"></script>
 
@@ -249,8 +270,8 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
             spaceBetween: 15,
-            loop:true,
-            autoplay: true,
+            loop: false,
+            autoplay: false,
             freeMode: true,
             pagination: {
                 el: ".swiper-pagination",
@@ -269,34 +290,64 @@
 
     <!--PDF-->
     <script>
-        function abrirPDFMX11(){
+        function abrirPDFMX11() {
             window.open('imgs/PDFS/CF FTS MX11.pdf');
         }
     </script>
 
     <script>
-        function abrirPDFPX7(){
+        function abrirPDFPX7() {
             window.open('imgs/PDFS/CF FAC PX7.pdf');
         }
     </script>
 
     <script>
-        function abrirPDFMX13(){
+        function abrirPDFMX13() {
             window.open('imgs/PDFS/CF FTT OFF ROAD MX13.pdf');
         }
     </script>
 
-     <script>
-         function abrirPDF_OffRoad_MX13(){
+    <script>
+        function abrirPDF_OffRoad_MX13() {
             window.open('imgs/PDFS/XF OFF ROAD MX13.pdf');
         }
-     </script>
-
-     <script>
-        function abrirPDF_XFMX13(){
-           window.open('imgs/PDFS/XF FTT MX13.pdf');
-       }
     </script>
+
+    <script>
+        function abrirPDF_XFMX13() {
+            window.open('imgs/PDFS/XF FTT MX13.pdf');
+        }
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const categorySelect = document.getElementById('category');
+
+            console.log(categorySelect);
+
+            // Add event listener to the category select element
+            categorySelect.addEventListener('change', function () {
+                const selectedCategory = this.value;
+                const productSlides = document.querySelectorAll('.swiper-slide');
+
+                console.log(productSlides);
+
+                productSlides.forEach(slide => {
+                    const slideCategory = slide.getAttribute('data-category');
+                    if (selectedCategory === 'all' || selectedCategory === slideCategory) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
