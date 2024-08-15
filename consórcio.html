@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Vitória Caminhóes | Consórcio</title>
@@ -66,7 +67,7 @@
         <div class="slide-container">
             <div class="slide">
                 <div class="img">
-                    <img class="consorcio-img" src="imgs/Banner_Consorcio.jpg" alt="">
+                    <img class="consorcio-img" src="/imgs/Banner_site5.jpg" alt="">
                 </div>
             </div>
             <div class="slide">
@@ -76,13 +77,14 @@
             </div>
             <div class="slide">
                 <div class="img">
-                    <img class="consorcio-img" src="imgs/Banner_Consorcio.jpg" alt="">
+                    <img class="consorcio-img" src="imgs/Banner_site9.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="overlay">
             <div class="consorico">
                 <div class="container">
+
 
                     <div class="left">
                         <h2>
@@ -132,16 +134,16 @@
 
 
                                 <div class="tab active" id="parcelTab">
-                                    <h4>Parcela Pretendida:</h4>
+                                    <h4>Parcela Pretendido:</h4>
 
                                     <div class="flex">
-                                        <span>R$<span class="value"> 1.910,00 </span></span>
-                                        <span>R$ 6.840,00</span>
+                                        <span>R$<span class="value"> 3000 </span></span>
+                                        <span>R$ 9500</span>
                                     </div>
                                     <!-- Hidden input field to store the selected range value -->
                                     <input type="hidden" id="selectedRange" name="selectedRange">
 
-                                    <input type="range" max="100" min="0" class="range"
+                                    <input type="range" max="100" min="0" class="range" value="0"
                                         oninput="sliderChange(this.value)">
                                 </div>
 
@@ -150,12 +152,12 @@
                                     <h4>Crédito Pretendido:</h4>
 
                                     <div class="flex">
-                                        <span>R$<span class="creditValue"> 400.000,00 </span></span>
+                                        <span>R$<span class="creditValue"> 300.000,00 </span></span>
                                         <span>R$ 1.200.000,00</span>
                                     </div>
                                     <!-- Hidden input field to store the selected range value -->
                                     <input type="hidden" id="selectedRangeCredit" name="selectedRange">
-                                    <input type="range" max="100" min="0" class="range"
+                                    <input type="range" max="100" min="0" class="range" value="0"
                                         oninput="sliderChangeCredito(this.value)">
                                 </div>
 
@@ -183,15 +185,9 @@
 
     <section class="consorico-section">
 
-        <div class="map">
-            <div class="container">
-                <div class="all">
-                    <h1>NÃO PERCA</h1> 
-                    <span>NÃO É SORTEIO!</span>
-                    <a href="#" class="consorico-custom-btn"><i class="fa-solid fa-truck-fast"></i> Veja nosssa promoção</a>
-                </div>
-            </div>
-        </div>
+
+
+
 
 
 
@@ -202,14 +198,14 @@
                     <h1>QUERO RECEBER <br />
                         OPORTUNIDADES DE CONSÓRCIOS </h1>
                     <!-- <form action=""> -->
-                    <input type="text" name="name" placeholder="Digite o seu nome">
-                    <input type="email" name="email" placeholder="Digite o seu email">
+                    <input type="text" name="name" placeholder="Type your name">
+                    <input type="email" name="email" placeholder="Type your email">
 
                     <select name="selectModel" id="">
                         <option value="Modelo">Modelo</option>
-                        <option value="2022">CF</option>
-                        <option value="2022">XF</option>
-                       <!--<option value="2022">Off-Road</option>-->
+                        <option value="2022">2022</option>
+                        <option value="2022">2023</option>
+                        <option value="2022">2024</option>
                     </select>
 
                     <div class="consorico-form-row">
@@ -267,7 +263,7 @@
                     </div>
 
 
-                    <textarea name="message" placeholder="Deixe sua mensagem"></textarea>
+                    <textarea name="message" placeholder="message"></textarea>
                     <div class="check">
                         <input type="checkbox" name="" id="">
                         <span> Li e concordo com a Política de Privacidade concedendo o uso dos meus dados.</span>
@@ -286,51 +282,52 @@
     <!-- --------FOOTER-Section--------- -->
     <div class="footer">
         <div class="container">
-          <div class="all">
-            <div class="col_one">
-              <div class="logo">
-                <img src="imgs/imgLogo1.png" alt="not show!" />
-              </div>
-              <span>Faz parte do nosso DNA,<br>
-                oferecer os melhores produtos afim de que cada cliente tenha um ótimo pós venda.</span>
+            <div class="all">
+                <div class="col_one">
+                    <div class="logo">
+                        <img src="imgs/imgLogo1.png" alt="not show!" />
+                    </div>
+                    <span>An explainer video of what Certificate <br> of Service does for your
+                        office and how <br> it works.</span>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Fique por dentro</h1>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Caminhões</a></li>
+                        <li><a href="#">Seminovos</a></li>
+                        <li><a href="#">Consórcio</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Peças e Acessórios</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Planejar eventos</h1>
+                    <ul>
+                        <li>CRONOGRAMA DE ENCERRAMENTO DE FERIADOS</li>
+                        <li>POLÍTICA DE COOKIES</li>
+                        <li>POLÍTICA DE PRIVACIDADE</li>
+                    </ul>
+                </div>
+                <div class="col_one">
+                    <h1>
+                        Redes sociais</h1>
+                    <div class="links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col_one">
-              <h1>
-                Fique por dentro</h1>
-              <ul>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="trucks.html">Caminhões</a></li>
-                <li><a href="consórcio.html">Consórcio</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="accessories.html">Peças e Acessórios</a></li>
-                <li><a href="contact.html">Contato</a></li>
-              </ul>
+            <div class="center_footer">
+                <p>(c) 2021. Victoria Caminhoes BK Advogada, LLC. Todos os direitos reservados.</p>
             </div>
-            <div class="col_one">
-              <h1>
-                Outros Sites da DAF</h1>
-              <ul>
-                <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop " target="_blank">DAF Webshop</a></li>
-                <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf" target="_blank">Peças Genuinas</a></li>
-                <li><a href="https://www.paccarfinancial.com.br/pt-br" target="_blank">PACCAR Financial</a></li>
-              </ul>
-            </div>
-            <div class="col_one">
-              <h1>
-                Redes sociais</h1>
-              <div class="links">
-                <a href="https://www.facebook.com/dafvitoria/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="center_footer">
-            <p>Direitos Reservados © 2024 Vitória Caminhões – OrionAppSolutions</p>
-          </div>
         </div>
-      </div>
-    
+    </div>
+
     <script src="./js/navbar.js"></script>
 
     <script src="js/menu.js"></script>
@@ -420,8 +417,8 @@
 
         function sliderChange(val) {
             // Parse the min and max values
-            const minValue = parseBrazilianReal("1910");
-            const maxValue = parseBrazilianReal("6480");
+            const minValue = parseBrazilianReal("3000");
+            const maxValue = parseBrazilianReal("9500");
 
             // Parse the current slider value
             const currentValue = parseBrazilianReal(val);
@@ -441,7 +438,7 @@
 
         function sliderChangeCredito(val) {
             // Parse the min and max values
-            const minValue = parseBrazilianReal("400.000,00");
+            const minValue = parseBrazilianReal("300.000,00");
             const maxValue = parseBrazilianReal("1.200.000,00");
 
             // Parse the current slider value
@@ -508,16 +505,16 @@
                         Swal.fire({
                             icon: 'success',
                             html:
-                                '<p>A vitória caminhões recebeu a sua mensagem</p>' +
-                                '<p>Entraremos em contato em breve</p>' +
-                                '<p>Obrigado!</p>',
+                                '<p>Vitória Caminhóes has received your message</p>' +
+                                '<p>We will contact you soon</p>' +
+                                '<p>Thank You!</p>',
                             showCloseButton: true,
                             focusConfirm: false,
 
                         });
                     },
                     error: function () {
-                        Swal.fire('Erro', 'Erro ao enviar a mensagem.', 'error');
+                        Swal.fire('Error', 'Failed to send the email.', 'error');
 
                     }
                 });

@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->
   <link href="/imgs/logo.gif.png" rel="icon">
@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Vitória Caminhóes | Contact Us</title>
 
 
@@ -42,7 +43,7 @@
           <li><a href="services.html">Serviços</a></li>
           <li><a href="accessories.html">Peças e Acessórios</a></li>
           <li><a href="consórcio.html">Consórcio</a></li>
-         <!--<li><a href="index.html">Quem somos</a></li>-->
+          <!--<li><a href="index.html">Quem somos</a></li>-->
 
           <button class="show">
             <a href="contact.html"><i class="fa-solid fa-user"></i>Contato</a>
@@ -66,81 +67,188 @@
         <!-- <button>Contact</button> -->
       </div>
     </div>
-    <div class="text_center">
+
+  </div>
+
+
+
+  <div class="contact" style="padding-top: 20px;">
+
+    <div class="text_center contact-page-text" style="padding-bottom: 30px;">
       <h2>
         É um prazer atendê-lo(a)!
       </h2>
       <p>
-        Nossa equipe especializada está pronta para atendê-lo(a), garantindo um serviço rápido e eficiente. Preencha o formulário abaixo para que possamos
+        Nossa equipe especializada está pronta para atendê-lo(a), garantindo um serviço rápido e eficiente. Preencha o
+        formulário abaixo para que possamos
         possamos entrar em contato
       </p>
     </div>
-  </div>
 
-  <div class="contacto">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="./imgs/contactform.avif" alt="">
+
+    <div class="contact-page-container">
+      <div class="contact-page-row">
+        <div class="col" style="align-self: center;">
+          <img src="./imgs/contactform.avif" class="contact-page-img" alt="" style="width: 100%;">
         </div>
         <div class="col">
-          <form name="contact" method="POST" netlify>
-            <input type="text" placeholder="Digite o seu nome" name="name">
-            <input type="email" placeholder="Email" name="email">
-            <!-- <input type="password" placeholder="Password"> -->
-            <textarea name="message" placeholder="Deixe-nos uma mensagem"></textarea>
-            <button type="submit">Enviar</button>
-          </form>
+          <div class="all">
+
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Type your name">
+              <input type="email" name="email" placeholder="Type your email">
+
+              <select name="selectModel" id="">
+                <option value="Modelo">Modelo</option>
+                <option value="2022">2022</option>
+                <option value="2022">2023</option>
+                <option value="2022">2024</option>
+              </select>
+
+              <div class="consorico-form-row">
+                <select name="selectState" id="" class="consorico-form-row-select1">
+                  <option value="">Estado</option>
+                  <option value="Acre">Acre</option>
+                  <option value="Alagoas">Alagoas</option>
+                  <option value="Amapá">Amapá</option>
+                  <option value="Amazonas">Amazonas</option>
+                  <option value="Bahia">Bahia</option>
+                  <option value="Ceará">Ceará</option>
+                  <option value="Distrito Federal">Distrito Federal</option>
+                  <option value="Espírito Santo">Espírito Santo</option>
+                  <option value="Goiás">Goiás</option>
+                  <option value="Maranhão">Maranhão</option>
+                  <option value="Mato Grosso">Mato Grosso</option>
+                  <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                  <option value="Minas Gerais">Minas Gerais</option>
+                  <option value="Pará">Pará</option>
+                  <option value="Paraíba">Paraíba</option>
+                  <option value="Paraná">Paraná</option>
+                  <option value="Pernambuco">Pernambuco</option>
+                  <option value="Piauí">Piauí</option>
+                  <option value="Rio de Janeiro">Rio de Janeiro</option>
+                  <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                  <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                  <option value="Rondônia">Rondônia</option>
+                  <option value="Roraima">Roraima</option>
+                  <option value="Santa Catarina">Santa Catarina</option>
+                  <option value="São Paulo">São Paulo</option>
+                  <option value="Sergipe">Sergipe</option>
+                  <option value="Tocantins">Tocantins</option>
+                </select>
+
+                <select name="selectCity" id="" class="consorico-form-row-select2">
+                  <option value="Estad">Cidade</option>
+                  <option value="Sao Paulo">São Paulo</option>
+                  <option value="Rio de Janeiro">Rio de Janeiro</option>
+                  <option value="Brasilia">Brasília</option>
+                  <option value="Salvador">Salvador</option>
+                  <option value="Fortaleza">Fortaleza</option>
+                  <option value="Belo Horizonte">Belo Horizonte</option>
+                  <option value="Manaus">Manaus</option>
+                  <option value="Curitiba">Curitiba</option>
+                  <option value="Recife">Recife</option>
+                  <option value="Porto Alegre">Porto Alegre</option>
+                  <option value="Goiânia">Goiânia</option>
+                  <option value="Belem">Belém</option>
+                  <option value="Guarulhos">Guarulhos</option>
+                  <option value="Campinas">Campinas</option>
+                  <option value="Sao Luis">São Luís</option>
+
+                </select>
+
+              </div>
+
+              <div class="consorico-form-row">
+                
+                <input type="email" name="telephone" placeholder="Tel:  (xx) xxx-xxx">
+
+                <select name="selectInterested" id="" class="consorico-form-row-select2">
+                  <option value="Estad">Assunto de interesse</option>
+                  <option value="Sao Paulo">option </option>
+                  <option value="Rio de Janeiro">option </option>
+                  <option value="Brasilia">option </option>
+                  <option value="Salvador">option </option>
+                </select>
+
+              </div>
+
+              
+
+
+              <textarea name="message" placeholder="message"></textarea>
+              <div class="check">
+                <input type="checkbox" name="" id="">
+                <span> Li e concordo com a Política de Privacidade concedendo o uso dos meus dados.</span>
+              </div>
+              <button style="width: 100%;" type="submit"><i class="fa-solid fa-paper-plane"></i>Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="footer">
     <div class="container">
-    <div class="all">
+      <div class="all">
         <div class="col_one">
-        <div class="logo">
+          <div class="logo">
             <img src="imgs/imgLogo1.png" alt="not show!" />
-        </div>
-        <span>Faz parte do nosso DNA,<br>
+          </div>
+          <span>Faz parte do nosso DNA,<br>
             oferecer os melhores produtos afim de que cada cliente tenha um ótimo pós venda.</span>
         </div>
         <div class="col_one">
-        <h1>
+          <h1>
             Fique por dentro</h1>
-        <ul>
-            <li><a href="quemSomos.html">Quem somos</a></li>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
             <li><a href="trucks.html">Caminhões</a></li>
             <li><a href="consórcio.html">Consórcio</a></li>
             <li><a href="services.html">Serviços</a></li>
             <li><a href="accessories.html">Peças e Acessórios</a></li>
             <li><a href="contact.html">Contato</a></li>
-        </ul>
+          </ul>
         </div>
         <div class="col_one">
-        <h1>
+          <h1>
             Outros Sites da DAF</h1>
-        <ul>
-            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop " target="_blank">DAF Webshop</a></li>
-            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf" target="_blank">Peças Genuinas</a></li>
+          <ul>
+            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/daf-webshop " target="_blank">DAF
+                Webshop</a></li>
+            <li><a href="https://www.dafcaminhoes.com.br/pt-br/pecas-e-acessorios/pecas-genuinas-daf"
+                target="_blank">Peças Genuinas</a></li>
             <li><a href="https://www.paccarfinancial.com.br/pt-br" target="_blank">PACCAR Financial</a></li>
-        </ul>
+          </ul>
         </div>
         <div class="col_one">
-        <h1>
+          <h1>
             Redes sociais</h1>
-        <div class="links">
+          <div class="links">
             <a href="https://www.facebook.com/dafvitoria/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/dafvitoriacaminhoes/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="center_footer">
+      </div>
+      <div class="center_footer">
         <p>Direitos Reservados © 2024 Vitória Caminhões – OrionAppSolutions</p>
+      </div>
     </div>
-    </div>
-</div>
+  </div>
 
 
   <script src="./js/navbar.js"></script>
@@ -150,7 +258,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 
-  <!-- <script>
+  <script>
     $(function () {
       $('#contactForm').submit(function (event) {
         event.preventDefault();
@@ -181,7 +289,7 @@
         });
       });
     });
-  </script> -->
+  </script>
 
 
 

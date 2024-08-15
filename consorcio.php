@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
    
-    $to = 'lucasolimpiorodrigues@gmail.com'; // ENviando para o email
+    $to = ''; // ENviando para o email
     $subject = 'Mail From Vitória Caminhóes Consórcio Form: ';
     $body = "Name: $name\n";
     $body .= "Email: $email\n";
